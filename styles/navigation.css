@@ -1,0 +1,156 @@
+html {
+     scroll-behavior: smooth;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 17px;
+     color: rgba(0, 0, 0, 0.90);
+     box-sizing: border-box;
+     transition: 0.5s;
+}
+
+body {
+     min-width: 1519px;
+}
+
+#header {
+     width: 100%;
+     height: 180px;
+     background-color: #f0f0f0;
+}
+
+.container {
+     height: 100%;
+     width: 1020px;
+     margin: 0 auto;
+}
+
+.leftContent {
+     float: left;
+}
+
+.logo-area {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     height: 100%;
+     width: 300px;
+}
+
+.logo {
+     height: 130px;
+     width: auto;
+     cursor: pointer;
+}
+
+.logo:hover {
+     opacity: 0.65;
+}
+
+.lang {
+     text-transform: uppercase;
+     font-size: 14px;
+     cursor: pointer;
+}
+
+.lang1 {
+     color: rgba(0, 0, 0, 0.9);
+     font-weight: 700;
+     margin-left: 35px;
+}
+
+.lang2 {
+     color: rgba(0, 0, 0, 0.7);
+     font-weight: 400;
+     margin-left: 15px;
+}
+
+.rightContent {
+     float: right;
+}
+
+.menu-area {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     height: 100%;
+}
+
+.menuLink {
+     text-decoration: none;
+     color: rgba(0, 0, 0, 0.8);
+     text-transform: capitalize;
+     font-weight: 400;
+     font-size: 17px;
+     margin-left: 25px;
+     padding: 0 10px;
+}
+
+.menu::after {
+     content: '';
+     display: block;
+     position: relative;
+     top: 8px;
+     left: -15%;
+     width: 0;
+     height: 4px;
+     border-radius: 10px;
+     background-color: #0066f9;
+     transition: 0.3s;
+}
+
+.menu:hover::after {
+     width: 130%;
+}
+
+.menuButton {
+     padding: 11px 22px;
+     background-color: #0066f9;
+     border-radius: 4px;
+     color: rgba(255, 255, 255, 0.95);
+     font-weight: 600;
+}
+
+.menuButton:hover {
+     background-color: #0090ff;
+}
+
+#footer {
+     height: 180px;
+     width: 100%;
+     border-top: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+#footer .container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.icons {
+     margin-bottom: 20px;
+}
+
+.icons a {
+     margin-right: 10px;
+}
+
+.icons a .fab {
+     color: #0066f9;
+     font-size: 40px;
+}
+
+.icons a .fab:hover {
+     color: rgba(0, 0, 0, 0.95);
+}
+
+.footer-text2 {
+     margin-top: 5px;
+}
+
+#footer a:hover {
+     color: #0066f9;
+}
